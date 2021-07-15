@@ -1,0 +1,41 @@
+.logo {
+  width: 70px;
+  height: 65px;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.inputstyles {
+  width: 400px;
+  border: none;
+  outline: none;
+}
+
+.inputstyles:focus {
+  border: 1px solid black;
+}
+
+.btns :focus {
+  outline: 1px solid #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile {
+    margin: 10px 70px;
+  }
+}
