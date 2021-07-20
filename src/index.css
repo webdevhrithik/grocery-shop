@@ -36,3 +36,9 @@ a {
 .minidivider {
   padding: 20px;
 }
+
+.carimgs img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}

@@ -145,7 +145,7 @@ const Navbar = ({ totalItems }) => {
           </div>
         </div>
       </AppBar>
-      <div style={{ padding: '90px' }}></div>
+      <div style={{ padding: '45px' }}></div>
     </>
   );
 };

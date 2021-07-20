@@ -3,7 +3,16 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { commerce } from './components/lib/commerce';
-import { Navbar, Products, Cart, Checkout } from './components';
+import {
+  Navbar,
+  Products,
+  Cart,
+  Checkout,
+  Hero,
+  Faqs,
+  Footer
+} from './components';
+import dealimg from './components/images/deal-bg.jpg';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -78,7 +87,15 @@ function App() {
 
         <Switch>
           <Route exact path='/'>
+            <Hero />
             <Products products={products} onAddToCart={handleAddToCart} />
+            <div className=' mt-5 w-100 position-relative'>
+              <img src={dealimg} alt='deal' height='400px' width='100%' />
+            </div>
+
+            <div className='container mt-5 mb-5 p-3'>
+              <Faqs />
+            </div>
           </Route>
 
           <Route exact path='/cart'>
@@ -100,6 +117,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 }

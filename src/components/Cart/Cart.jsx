@@ -77,8 +77,9 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   );
 
   return (
-    <div className='container'>
+    <div className='container mt-5'>
       <h2>Your Shopping Cart</h2>
+      <div className='minidivider'></div>
       {!cart.line_items.length ? renderEmptyCart() : renderCart()}
       <div className='divider'></div>
     </div>
